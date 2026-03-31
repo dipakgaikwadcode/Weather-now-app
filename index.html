@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>SkyCast Dashboard</h1>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <main id="weatherDisplay" class="hidden">
+            <section class="current-weather" id="currentWeather">
+                </section>
+
+            <section class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-grid" id="forecastGrid">
+                    </div>
+            </section>
+        </main>
+
+        <div id="loader" class="loader hidden">Loading...</div>
+        <div id="errorMessage" class="error hidden">City not found. Please try again.</div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
